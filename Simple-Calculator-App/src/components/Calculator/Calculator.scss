@@ -1,0 +1,112 @@
+.calc-body {
+    height: 635px;
+    width: 347px;
+    background-color: #2a2e37;
+    border: 1px solid rgba(255, 255, 255, 0.321);
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.display {
+    background-color: #2a2e37;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+
+.current-operation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+
+    .curr-opr {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .last-opr {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+}
+
+.operations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.operations-top {
+    position: relative;
+    width: 350px;
+    height: 87px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container-numbers {
+    display: flex;
+}
+
+.operations-right {
+    height: 352px;
+    width: 87px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    width: 85px;
+    height: 85px;
+    background-color: #2f3646;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    color: white;
+    cursor: pointer;
+}
+
+.numbers {
+    width: 261px;
+    height: 352px;
+}
+
+.row {
+    display: flex;
+}
+
+.row:last-child {
+    .button {
+        margin-bottom: 0px;
+    }
+}
+
+.result-btn {
+    height: 172px !important;
+}
+
+.purple-text {
+    color: #c45bdc;
+}
+
+.purple-bg {
+    background-color: #c45bdc;
+    color: white;
+}

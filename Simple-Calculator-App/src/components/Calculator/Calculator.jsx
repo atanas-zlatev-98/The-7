@@ -13,13 +13,13 @@ const Calculator = () => {
 
     const handleDeleteButton = () => {
         if (inputOpreration.length <= 0) {
-            return
+            return;
         }
+        
         setInputOperation(inputOpreration.slice(0, -1));
     }
 
     const handleButtonClick = (input) => {
-
         if (input === '+' || input === '-' || input === '/' || input === 'x' || input === '%') {
 
             if(inputOpreration.length <=0){
@@ -82,17 +82,17 @@ const Calculator = () => {
     }
 
     /* ------ TODO ------
-    [ ] - check if all operations work as intended
+    [X] - check if all operations work as intended
     [ ] - fix dot problem
-    [ ] - fix styling
+    [X] - fix styling
     */
-   
+
     return (
         <div className='calc-body'>
             <div className='display'>
                 <div className='current-operation'>
-                    <input type='text' className='last-opr' value={`${lastOperation}`}></input>
-                    <input type='text' className='curr-opr' value={inputOpreration} onChange={(e) => { setInputOperation(e.target.value) }}></input>
+                    <input type='text' className='last-opr' value={`${lastOperation}`} disabled></input>
+                    <input type='text' className='curr-opr' value={inputOpreration} onChange={(e) => { setInputOperation(e.target.value) }} disabled></input>
                 </div>
             </div>
             <div className='operations'>
